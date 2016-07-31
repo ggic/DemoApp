@@ -16,7 +16,7 @@ angular.module('firstApp.controllers', [])
 
   }
   $scope.remove = function(chat) {
-    Chats.remove(chat);
+    chats.remove(chat);
   };
 } )
 

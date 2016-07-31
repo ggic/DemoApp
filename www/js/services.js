@@ -5,17 +5,18 @@ angular.module('firstApp.services', [])
   // Some fake testing data
       return {
 
-          all:function () { return $http.get('/IonicClub/firstApp/www/chats.json')
+          all:function () { return $http.get('/firstApp/www/chats.json')
             .then(function successCallback(response) {
               return response;
             },
             function errorCallback(response) {
-              alert(response);
+              alert(response.data);
             });
 
         },
         remove: function (chat) {
-          chats.splice(chats.indexOf(chat), 1);
+          chats.remove(chat);
+          //chats.splice(chats.indexOf(chat), 1);
         },
         get: function (chatId) {
           for (var i = 0; i < chats.length; i++) {
