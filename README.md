@@ -1,2 +1,2 @@
-# firstApp
-使用Ionic前端框架.
+
+使用Ionic前端框架开发的APP.
